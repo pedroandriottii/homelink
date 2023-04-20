@@ -1,0 +1,105 @@
+$navbar-bg-color: #333;
+$navbar-text-color: #fff;
+$link-hover-color: #555;
+$hamburger-size: 28px;
+$breakpoint: 768px;
+
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $navbar-bg-color;
+  padding: 20px 24px;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  color: $navbar-text-color;
+  width: 250px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $navbar-bg-color;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  @include transition(max-height, 0.3s);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  color: $navbar-text-color;
+  text-decoration: none;
+  padding: 20px 16px;
+
+  &:hover {
+    background-color: $link-hover-color;
+  }
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: $hamburger-size;
+  height: 20px;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $navbar-text-color;
+    @include transition(transform, 0.3s);
+  }
+
+  &.open {
+    span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
+    background-color: transparent;
+    max-height: initial;
+    overflow: visible;
+    ul {
+      display: flex;
+    }
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+}
