@@ -1,0 +1,30 @@
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article .hero-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+article .hero-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+article .hero-text h1{
+    color: #ff8c00;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #ff8c00;
+    border: none;
+    width: 100vw;
+}

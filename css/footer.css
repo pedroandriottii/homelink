@@ -43,7 +43,7 @@ footer .social{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-bottom: 1px solid skyblue;
+    border-bottom: 1px solid #ff8c00;
 }
 
 footer .info p{
