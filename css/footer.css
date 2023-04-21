@@ -2,7 +2,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #185274;
+    background-color: #2E34A6;
 }
 
 footer .seccondary{
@@ -17,10 +17,10 @@ footer .menu{
     grid-template-columns: 2fr 2fr;
     align-items: center;
     flex-direction: column;
-    border-top: 1px solid skyblue;
+    border-top: 1px solid #04D9D9;
     padding: 20px;
     gap: 8px;
-    border-bottom: 1px solid skyblue;
+    border-bottom: 1px solid #04D9D9;
     justify-items: center;
 }
 
@@ -43,7 +43,7 @@ footer .social{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-bottom: 1px solid #ff8c00;
+    border-bottom: 1px solid #04D9D9;
 }
 
 footer .info p{
@@ -54,7 +54,7 @@ footer .info p{
 
 footer .final{
     width: 100%;
-    background-color: #10374e;
+    background-color: #15038C;
 }
 
 footer .final p{

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #185274;
+  background-color: #2E34A6;
   padding: 20px 24px;
   position: relative;
   z-index: 1000;
@@ -19,7 +19,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #185274;
+  background-color: #2E34A6;
   width: 100%;
   overflow: hidden;
   max-height: 0;
@@ -38,8 +38,8 @@
   text-decoration: none;
   padding: 20px 16px;
 }
-.menu li:hover {
-  color: sky;
+.menu li a:hover {
+  color: #04D9D9;
 }
 
 .hamburger-menu {
