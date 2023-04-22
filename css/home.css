@@ -19,6 +19,7 @@ article .hero-img{
 article .hero-text h1{
     color: #2E34A6;
     padding-top: 20px;
+    padding-bottom: 10px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -26,11 +27,16 @@ article .hero-text h1{
 
 article .hero-text h2{
     color: #2E34A6;
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 button{
     border-radius: 10px;
-    background-color: #04D9D9;
+    background-color: #15038C;
     border: none;
-    width: 100vw;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    color: #04D9D9;
 }
