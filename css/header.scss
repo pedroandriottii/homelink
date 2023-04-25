@@ -1,6 +1,6 @@
-$navbar-bg-color: #333;
+$navbar-bg-color: #15038C;
 $navbar-text-color: #fff;
-$link-hover-color: #555;
+$link-hover-color: #2E34A6;
 $hamburger-size: 28px;
 $breakpoint: 768px;
 
@@ -15,13 +15,15 @@ $breakpoint: 768px;
   align-items: center;
   background-color: $navbar-bg-color;
   padding: 20px 24px;
+  height: 60px;
+  box-sizing: border-box;
   position: relative;
   z-index: 1000;
 }
 
 .logo {
   color: $navbar-text-color;
-  width: 250px;
+  width: 220px;
   text-decoration: none;
   font-size: 24px;
 }
@@ -48,7 +50,6 @@ $breakpoint: 768px;
   color: $navbar-text-color;
   text-decoration: none;
   padding: 20px 16px;
-
   &:hover {
     background-color: $link-hover-color;
   }

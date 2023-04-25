@@ -2,15 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2E34A6;
+  background-color: #15038C;
   padding: 20px 24px;
+  height: 60px;
+  box-sizing: border-box;
   position: relative;
   z-index: 1000;
 }
 
 .logo {
   color: #fff;
-  width: 250px;
+  width: 220px;
   text-decoration: none;
   font-size: 24px;
 }
@@ -19,7 +21,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #2E34A6;
+  background-color: #15038C;
   width: 100%;
   overflow: hidden;
   max-height: 0;
@@ -39,7 +41,7 @@
   padding: 20px 16px;
 }
 .menu li a:hover {
-  color: #04D9D9;
+  background-color: #2E34A6;
 }
 
 .hamburger-menu {
