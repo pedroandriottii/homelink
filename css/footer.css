@@ -34,7 +34,7 @@ footer .seccondary{
 }
 
 footer .seccondary img{
-    padding: 20px;
+    padding-top: 10px;
 }
 
 footer .social{
@@ -44,6 +44,7 @@ footer .social{
     align-items: center;
     flex-direction: row;
     border-bottom: 1px solid #04D9D9;
+    padding-bottom: 5px;
 }
 
 footer .info p{
